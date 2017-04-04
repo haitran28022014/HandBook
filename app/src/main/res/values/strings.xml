@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HandBook</string>
+    <string name="transition_string">ImageView</string>
+    <string name="transition_name">NameTitle</string>
+</resources>

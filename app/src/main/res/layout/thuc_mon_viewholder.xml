@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="2dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardCornerRadius="5dp"
+    android:background="@color/colorGray"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/img_thaiky"
+                android:layout_width="match_parent"
+                android:transitionName="@string/transition_string"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorGray"
+            android:gravity="center_vertical"
+            android:padding="5dp">
+
+            <com.haitran.handbook.view.TextViewSan
+                android:id="@+id/txt_name_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:transitionName="@string/transition_name"
+                android:lines="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_day_of_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name_week"
+                android:layout_marginLeft="5dp"
+                android:textSize="14sp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
